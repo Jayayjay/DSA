@@ -33,3 +33,23 @@ queue.append("Terry")
 queue.append("Graham")
 queue.popleft()
 queue
+
+# List comprehensions
+
+squares = []
+for i in range(11):
+    squares.append(i**2)
+    
+squares
+
+squares = list(map(lambda x:x**2, range(10)))
+# same as 
+squares = [x**2 for x in range(10)]
+
+combs = []
+for x in [1, 2, 3]:
+    for y in [3, 1, 4]:
+        if x != y:
+            combs.append((x, y))
+
+combs
